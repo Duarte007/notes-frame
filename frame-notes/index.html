@@ -13,8 +13,10 @@
             </div>
 
             <div id="frame" class="notes-frame">
-                <div class="notes"> 
-                    <p>Write something</p>
+
+                <div id ="0" class="notes">
+                    <i onclick="removeNote()" class="far fa-window-close close"></i>
+                    <textarea rows = "5" cols = "50" class="notes-text" type="text" placeholder="write something"></textarea>
                 </div>
     
             </div>
@@ -26,13 +28,22 @@
 
         <script>
             function addNote(){
+                let note = $('.notes')[$('.notes').length-1];
+                let lastId = note ? note.id : 0;
+                let newId = parseInt(lastId)+1;
                 if($("#frame").children().length < 9){
-                    $( "#frame" ).append('<div class="notes">'+ 
-                                            '<p>Write something</p>'+
+                    $( "#frame" ).append('<div id= "'+newId+'" class="notes">'+ 
+                                            '<i onclick="removeNote()" class="far fa-window-close close"></i>'+
+                                            '<textarea rows = "5" cols = "50" class="notes-text" type="text" placeholder="write something"></textarea>'+
                                         '</div>');
                 } else {
                     alert("não da mais");
                 }
+            };
+
+            function removeNote(){
+                let id = event.currentTarget.parentElement.id;
+                $('#'+id).remove();
             };
         </script>
     </body>

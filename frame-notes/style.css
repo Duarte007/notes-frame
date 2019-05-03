@@ -58,6 +58,14 @@ html{
     box-shadow: 10px 8px #d8d8d8;
 }
 
+.notes-text{
+    height: 90%;
+    width: 100%;
+    background-color: #efef19;
+    border: 0px;
+    padding: 10px;
+}
+
 .footer{
     position: absolute;
     bottom: 0px;
@@ -73,4 +81,17 @@ html{
     left: 45%;
     right: 45%;
     cursor: pointer;
+}
+
+.close{
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+.notes ::-webkit-scrollbar{
+    width: 0px;
+}
+
+textarea {
+    resize: none;
 }
