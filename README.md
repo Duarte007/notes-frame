@@ -1,2 +1,2 @@
 # hello-word
-just a repository
+frame to add post-it notes, only in html and css.
