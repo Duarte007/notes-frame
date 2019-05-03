@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Testes</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" media="screen, handheld" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="content" class="content">
+            <div class="header">
+                <h1 class="title">Notes Frame</h1>
+            </div>
+
+            <div id="frame" class="notes-frame">
+                <div class="notes"> 
+                    <p>Write something</p>
+                </div>
+    
+            </div>
+
+            <div class="footer">
+                <i class="fas fa-plus-circle icon" onclick="addNote()"></i>
+            </div>
+        </div>
+
+        <script>
+            function addNote(){
+                if($("#frame").children().length < 9){
+                    $( "#frame" ).append('<div class="notes">'+ 
+                                            '<p>Write something</p>'+
+                                        '</div>');
+                } else {
+                    alert("não da mais");
+                }
+            };
+        </script>
+    </body>
+
+</html>

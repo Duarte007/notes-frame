@@ -1,0 +1,76 @@
+html{
+    background-color: #fff;
+}
+
+.content{
+    background-color: #fff;
+    position: absolute;
+    top: 4%;
+    left: 21%;
+    height: 90%;
+    width: 60%;
+    border-style: outset;
+    border-width: 7px;
+    border-color: #000;
+    border-radius: 10px
+}
+
+.header{
+    text-align: center;
+    position: relative;
+    height: 10%;
+    background-color: #252525;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 1%;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.notes-frame{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notes {
+    background-color: #efef19;
+    margin-left: 4.9%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    height: 22%;
+    width: 25%;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    top: 13%;
+    box-shadow: 10px 8px #d8d8d8;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: #252525;
+    height: 7%;
+    width: 100%;
+}
+
+.icon{
+    position: absolute;
+    font-size: 35px;
+    margin-top: 1%;
+    left: 45%;
+    right: 45%;
+    cursor: pointer;
+}
